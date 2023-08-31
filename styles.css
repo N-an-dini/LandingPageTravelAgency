@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;}
+
+  
+    #nav-main{
+      background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url("./travel.jpeg");/** image taken from  unsplash.com (credit: Daniela Cuevas)**/
+       width:100%;
+       height: 100vh;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+
+    .navbar{
+        height: 70px;
+        width: 100%;
+        padding: 0px 70px;
+        color:whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       }
+    .logo{
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 24px;
+    }
+    .logo span{
+        color:orangered;
+    }
+
+    .container-1 a{
+        text-decoration: none;
+        color: whitesmoke;
+        padding:10px 20px;
+        font-weight: bold;
+ } 
+ .main-container{
+    display: flex;
+    text-align: center;
+    color: whitesmoke;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.text-part h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    
+}
+.text-part p{
+    
+    font-size: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.button{
+    padding-top: 20px;
+}
+.button-click{
+    background-color: orangered;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10rem;
+    letter-spacing: 2px;
+}
+.button-click a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+/** pricing **/
+.pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      gap: 2rem;
+      background-color: whitesmoke;
+      padding: 0px 20px;
+      
+      
+    }
+
+    .pricing-plan {
+      flex: 1;
+      width: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      text-align: center;
+      border-radius: 20px;
+      border:2px solid #21252989;
+      box-shadow: 0 4px 8px 0 #21252989;
+    }
+
+    .plan-title {
+      font-size: 28px;
+      margin-bottom: 10px;
+      border:2px solid #212529;
+      color:white;
+      background-color: #212529;
+      border-radius: 5px;
+    }
+
+    .plan-price {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    
+
+/** contact-part **/
+
+#contact{
+  background-color: #212529;
+}
+
+
+.form-fill
+{
+    display: grid;
+    width:300px;
+    gap:10px;
+    margin:0 auto;
+    text-align: center;
+           
+}
+
+.title
+{
+    text-align: center;
+    color:orangered; 
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
+  .hidden{
+    display: none;
+    
+  }
+  label{
+    color:white;
+  }
+  input[type="text"] {
+    background: transparent;
+    height: 30px;
+    border-radius: 2px solid white;
+    color:white;
+}
+input[type="submit"] {
+    background: orangered;
+    height: 30px;
+    border-radius: 2px solid white;
+    color:white;
+    width: 60px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: white;
+  color: orangered;
+}
+footer p{
+  color:whitesmoke;
+}
+ 
+  /** For Responsive **/
+
+@media (max-width: 1250px) {
+  .pricing-container {
+        flex-direction: column;
+        height: 100%;
+        padding:20px 0;
+      }
+      .main-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    .text-part p{
+    
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+}

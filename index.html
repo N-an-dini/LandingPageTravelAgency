@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="nav-main">
+    <nav class="navbar">
+        <div class="logo"><span>T</span>ravel</div>
+        <div class="container-1">
+            <a href="#price">Price</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+      
+    <section id="home">
+    <div class="main-container"> 
+        <div class="text-part">
+         <h2><span>T</span>RAVEL WITH US</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies, velit quis porttitor vestibulum, erat nunc elementum mi, non dictum purus elit eget odio. Donec luctus massa ac diam malesuada, vitae imperdiet mauris sollicitudin. Praesent molestie eleifend aliquam.</p>
+         </div>
+        <div class="button">
+           <button class="button-click"><a href="#contact">Contact Us</a></button>
+        </div>
+    </div>
+    </section>
+    </section>
+    <section id="price">
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$100</div>
+        <ul class="plan-features">
+          <li>✅ Hotel</li>
+          <li>🚫 Food </li>
+          <li>🚫 Transport support</li>
+        </ul>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$159</div>
+        <ul class="plan-features">
+          <li>✅ Hotel</li>
+          <li>✅ Food</li> 
+          <li>🚫 Transport support</li>
+        </ul>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$200</div>
+        <ul class="plan-features">
+          <li>✅ Hotel</li>
+          <li>✅ Food</li>
+          <li>✅ Transport Support</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+      <div class="box">
+        <div class="contact-container">
+          <h1 class="title">Get In Touch</h1>
+          <form action="submit.php" method="post" class="form-fill" id="contact-form" >
+            
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your full name">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" placeholder="Write something.." style="height:90px; background: transparent; color:white"></textarea>
+                <input type="submit" value="Submit">    
+          </form>
+        </div>
+        <div id="thankyou-message" class="hidden">
+            <p style="color:white; display: flex; justify-content: center;">Thank you for contacting us!</p>
+        </div>
+    </div>
+    <footer>
+      <p>&copy; 2023. All rights reserved.</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
